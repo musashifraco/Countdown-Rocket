@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Countdown</title>
+    <!-- form script -->
+    <script defer src="../src/script.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img class="topImage" src="../src/assets/top-image.svg" alt="" />
+      <img class="bottomImage" src="../src/assets/bottom-image.svg" alt="" />
+      <img class="rocketImage" src="../src/assets/rocket.svg" alt="" />
+      <div class="textContent">
+        <p>Ready to launch in...</p>
+        <div class="countdown">
+          <div class="unitOfTime">Dias<span id="days">00</span></div>
+
+          <div class="unitOfTime">Horas<span id="hours">00</span></div>
+
+          <div class="unitOfTime">Minutos<span id="minutes">00</span></div>
+
+          <div class="unitOfTime">Segundos<span id="seconds">00</span></div>
+        </div>
+        <p>Inscreva-se para saber mais sobre o lançamento</p>
+        <button onclick="showForm()">Inscreva-se</button>
+      </div>
+    </main>
+    <div class="disable" id="formContent">
+      <p>Realize seu Log-in</p>
+      <form action="">
+        <svg
+          onclick="hiddenForm()"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#554cfd"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        <fieldset>
+          <label for="">E-mail:<input type="email" /></label>
+        </fieldset>
+        <fieldset>
+          <label for="">Senha:<input type="password" /></label>
+        </fieldset>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </body>
+</html>
